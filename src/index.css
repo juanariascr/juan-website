@@ -1,0 +1,59 @@
+/* src/index.css */
+
+/* Define color variables for light mode (the default).
+  :root is equivalent to the <html> tag.
+*/
+:root {
+  --color-background: #f3f4f6;       /* bg-gray-100 */
+  --color-text-primary: #1f2937;    /* text-gray-800 */
+  --color-text-secondary: #4b5563;  /* text-gray-600 */
+  --color-card-background: #ffffff; /* bg-white */
+  --color-navbar-background: #1f2937;/* bg-gray-800 */
+  --color-navbar-text: #d1d5db;      /* text-gray-300 */
+  --color-link: #3b82f6;             /* text-blue-500 */
+  --color-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --fade-in-animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Define color variables for dark mode.
+  This whole block will be applied when the body has the attribute data-theme="dark".
+*/
+[data-theme='dark'] {
+  --color-background: #111827;       /* bg-gray-900 */
+  --color-text-primary: #f9fafb;    /* text-gray-50 */
+  --color-text-secondary: #9ca3af;  /* text-gray-400 */
+  --color-card-background: #1f2937; /* bg-gray-800 */
+  --color-navbar-background: #000000;/* bg-black */
+  --color-navbar-text: #e5e7eb;      /* text-gray-200 */
+  --color-link: #60a5fa;             /* text-blue-400 */
+  --color-shadow: 0 4px 6px -1px rgb(255 255 255 / 0.1), 0 2px 4px -2px rgb(255 255 255 / 0.1);
+}
+
+/* Base body styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  /* Use the CSS variables */
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+
+  /* Add a smooth transition for color changes */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

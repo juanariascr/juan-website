@@ -1,0 +1,58 @@
+/* src/components/Cards.module.css */
+.pageContainer {
+  padding: 2rem;
+}
+
+.pageTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.card {
+  background-color: var(--color-card-background);
+  color: var(--color-text-secondary);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--color-shadow);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animation */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Move card up on hover */
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.cardSubtitle {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.cardText {
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.cardLink {
+  color: var(--color-link);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+.list {
+  list-style-position: inside;
+  margin-top: 0.5rem;
+}

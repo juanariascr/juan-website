@@ -1,0 +1,17 @@
+/* src/components/HomePage.module.css */
+.container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+}
